@@ -1,0 +1,78 @@
+506  cd
+  507  clear
+  508  cd study/
+  509  ls
+  510  cd os-labs/
+  511  git pul
+  512  clear
+  513  git pull
+  514  cd labs-2025/lab-02
+  515  ll
+  516  cd labs-2025
+  517  ls
+  518  cd lab2
+  519  ls
+  520  clear
+  521  ls
+  522  less labdata-21.log 
+  523  vim labdata-21.log 
+  524  cd ..
+  525  ls
+  526  cd ..
+  527  ls
+  528  cd os-lab-01
+  529  cd os-lab-1
+  530  ls
+  531  echo "Переговоры вел SipakovVA. Он изобразил приятную улыбку и сказал:
+===============================================================
+1. Создайте директорию с именем любимой книги, в ней создайте директории с именами основных персонажей.
+2. В каждой директории посвященной персонажу создайте файл info.txt, содержащий на отдельных строках его полное имя, краткое описание характера и отношение к сюжету (можно со спойлерами).
+3. С помощью команд ls, sort, head, tail выведите в терминал имена первых двух (по алфавитному порядку) персонажей
+4. С помощью команд pwd, cat, head, tail создайте из любого файла info.txt новый файл info_path.txt, содержащий на 2ой строке полный путь до текущего каталога
+5. Перейдите в директорию os-labs/students-2025 из Лабораторной Работы №1 и загрузите из репозитория последнюю версию. В ней находится множество файлов с информацией о студентах с ожидаемым форматом названия: ФамилияИО
+Выведите в терминал имена (первые строки txt файлов) всех студентов, содержащих в названии буквы a и n в любом порядке.
+===============================================================
+" >> README.md 
+  532  mkdir "Portain of Dorian Grey" 
+  533  cd Portain\ of\ Dorian\ Grey/
+  534  mkdir Dorian Genry Bezil 
+  535  touch */info.txt
+  536  cd Dorian/
+  537  l
+  538  touch info.txt
+  539  cat >> info.txt 
+  540  cat info.txt 
+  541  cd ..
+  542  cd Genry/
+  543  cat >> info.txt 
+  544  cd ../Bezil/
+  545  cat >> info.txt
+  546  clear
+  547  cd ..
+  548  cat README.md 
+  549  ls Portain\ of\ Dorian\ Grey/ | sort | head -n 2
+  550  cd Portain\ of\ Dorian\ Grey/
+  551  head -n 1 Dorian/info.txt >> Dorian/info_path.txt && pwd >> Dorian/info_path.txt && tail -n 3 Dorian/info.txt  >> Dorian/info_path.txt
+  552  cat Dorian/info_path.txt 
+  553  rm rm Dorian/info_path.txt 
+  554* 
+  555  head -n 1 Dorian/info.txt >> Dorian/info_path.txt && pwd >> Dorian/info_path.txt && tail -n +3 Dorian/info.txt  >> Dorian/info_path.txt
+  556  cat Dorian/info_path.txt 
+  557  clear
+  558  cd 
+  559  cd study/os-lab-1/
+  560  ls
+  561  cat README.md 
+  562  cd ../os-labs/students-2025/
+  563  git pull
+  564  ls
+  565  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*'
+  566  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*"
+  567  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*" | head -n 1
+  568  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*" | cat | head -n 1
+  569  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*" | cat 
+  570  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*" | xargs -I{} head -n 1 {}
+  571  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*" | xargs head -n 1 
+  572  clear
+  573  history 
+
