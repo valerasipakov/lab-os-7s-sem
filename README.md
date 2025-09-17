@@ -15,3 +15,4 @@
 4)  555  head -n 1 Dorian/info.txt >> Dorian/info_path.txt && pwd >> Dorian/info_path.txt && tail -n +3 Dorian/info.txt  >> Dorian/info_path.txt 
 5)  571  ls | grep -Ei "(a|n)*.*(a|n)*.*(a|n).*" | xargs head -n 1
 
+head *a*n* *n*a*
